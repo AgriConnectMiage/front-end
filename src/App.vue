@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import { Button } from "./components/ui/button";
-import { Input } from "@/components/ui/input";
+import { onErrorCaptured } from "vue";
+
+onErrorCaptured((err, vm, info) => {
+  console.log(err, vm, info);
+});
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <Button>Click me</Button>
-    <Input />
+  <div class="m-2 md:mx-24 mt-12">
+    <router-view></router-view>
   </div>
 </template>
 
