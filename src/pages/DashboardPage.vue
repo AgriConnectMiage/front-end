@@ -3,8 +3,9 @@ import VerticalNavbar from "@/components/navbar/VerticalNavbar.vue";
 </script>
 
 <template>
-  <div>
+  <div class="flex">
     <VerticalNavbar />
+    Dashboard
   </div>
 </template>
 
