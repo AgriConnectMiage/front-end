@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,6 +21,7 @@
     --input: 0 0% 89.8%;
 
     --primary: 0 0% 9%;
+    --lime: #E4E9E4;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -75,4 +77,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  background: var(--lime);
+  font-family: 'Nunito Sans', sans-serif;
 }

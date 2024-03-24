@@ -1,5 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomePage from "@/pages/HomePage.vue";
+import InventoryPage from "@/pages/InventoryPage.vue";
+import DashboardPage from "@/pages/DashboardPage.vue";
+import ProfilePage from "@/pages/ProfilePage.vue";
 
 const routes = [
   {
@@ -7,7 +10,21 @@ const routes = [
     name: "Home",
     component: HomePage,
   },
-
+  {
+    path: "/inventory",
+    name: "Inventory",
+    component: InventoryPage,
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: DashboardPage,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: ProfilePage,
+  },
   {
     path: "/:catchAll(.*)",
     redirect: "/",
@@ -15,7 +32,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory("/wasabi-dataviz"),
+  history: createWebHashHistory("/"),
   routes: routes,
 });
 
