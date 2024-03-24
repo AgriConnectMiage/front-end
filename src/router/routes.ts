@@ -32,7 +32,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory("/wasabi-dataviz"),
+  history: createWebHashHistory("/"),
   routes: routes,
 });
 
