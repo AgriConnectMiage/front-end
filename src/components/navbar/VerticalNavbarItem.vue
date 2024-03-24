@@ -8,8 +8,8 @@ defineProps({
 
 <template>
   <div
-    class="flex py-2 pl-4 w-full rounded bg-transparent hover:bg-secondary-green cursor-pointer"
-    :class="{ 'bg-secondary-green': isActive }"
+    class="flex py-2 pl-4 w-full rounded hover:bg-secondary-green cursor-pointer"
+    :class="[isActive ? 'bg-secondary-green' : '']"
     @click="$router.push({ name: routeName })"
   >
     <slot></slot>
